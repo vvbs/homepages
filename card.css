@@ -1,0 +1,69 @@
+:root{
+  --font: 'Courier New' , Courier , monospace;
+  --color: #fffffb9;
+  --bg-color: #395a03;
+  --gradient-color: liner gradient (-20beg,
+    #9aeb18 0%, #04414f 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var (--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+body::after{
+  content: '';
+  width: 15em;
+  height: 15em;
+  background-image: var(--gradient-color);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(150px, 100px);
+}
+
+.card{
+  width: 30em;
+  height: 18em;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 2em;
+  box-shadow: 0 0 1em rgba(0,0,0,.2);
+  border: 1px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(30px);
+  color: var(--color);
+}
+
+.card-info{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.bank-name{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.card-expiry{
+  font-size:1.3em;
+}
+
+
+
+
+
+
+
+
+
